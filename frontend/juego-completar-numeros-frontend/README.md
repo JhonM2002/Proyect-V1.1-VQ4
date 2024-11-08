@@ -1,27 +1,72 @@
-# JuegoCompletarNumerosFrontend
+# 🧩 Juego de Secuencias Numéricas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+¡Bienvenido al **Juego de Secuencias Numéricas**! Este proyecto está diseñado para ayudar a los usuarios a trabajar con secuencias y encontrar números faltantes, sirviendo como una herramienta lúdica y educativa.
 
-## Development server
+## 📋 Tabla de Contenidos
+- [Descripción del Proyecto](#descripcion-del-proyecto)
+- [Tecnologías Utilizadas](#tecnologias-utilizadas)
+- [Instalación](#instalacion)
+- [Uso del Proyecto](#uso-del-proyecto)
+- [Archivos y Estructura](#archivos-y-estructura)
+- [Estilo Visual](#estilo-visual)
+- [Autor](#autor)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📖 Descripción del Proyecto <a name="descripcion-del-proyecto"></a>
+Este proyecto está orientado a permitir que los usuarios practiquen la identificación de patrones numéricos. Consiste en un juego donde los usuarios deben encontrar números que faltan en una secuencia numérica generada aleatoriamente. Está pensado para mejorar la agilidad mental y ayudar a terapeutas a usarlo como una herramienta terapéutica.
 
-## Code scaffolding
+## 🚀 Tecnologías Utilizadas <a name="tecnologias-utilizadas"></a>
+- **HTML5**: Estructuración del contenido.
+- **CSS3**: Estilización de la interfaz para hacerla más atractiva y moderna.
+- **JavaScript**: Lógica del juego y gestión de la interfaz de usuario.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🛠 Instalación <a name="instalacion"></a>
+Para utilizar este proyecto, simplemente sigue estos pasos:
 
-## Build
+1. Abre el archivo `login.html` en tu navegador favorito para comenzar.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🎮 Uso del Proyecto <a name="uso-del-proyecto"></a>
+1. **Pantalla de Login**: 
+   - Ingresa el ID del terapeuta y el ID del paciente. Haz clic en **Continuar** para ir a la configuración del juego.
+   - También puedes revisar el historial haciendo clic en **Historial**.
 
-## Running unit tests
+   ![Login](img/Login.jpg)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Configuración del Juego**:
+   - Selecciona el rango de números, la longitud de la secuencia, y la cantidad de números que deseas encontrar.
+   - Haz clic en **Iniciar Juego**.
 
-## Running end-to-end tests
+   ![Configuración](img/config.jpg)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Pantalla de Juego**:
+   - Encuentra los números que faltan en la secuencia. Los inputs se habilitarán uno por uno a medida que completes correctamente cada número.
+   - Haz clic en **Validar** para comprobar cada respuesta.
 
-## Further help
+   ![Juego](img/game.jpg)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. **Pantalla de Resultados**:
+   - Al finalizar el juego, se muestra un resumen de los errores cometidos y una caja de texto para observaciones.
+   - Puedes **Guardar** el resultado, volver a intentar o comenzar una nueva partida.
+
+   ![Resultados](img/Resultado.jpg)
+
+## 📂 Archivos y Estructura <a name="archivos-y-estructura"></a>
+### Estructura de Archivos
+- **login.html**: Página principal donde se ingresan los IDs de usuario.
+- **login.js**: Lógica del inicio de sesión y almacenamiento de IDs.
+- **config.html**: Configuración del juego donde se define el rango y los números faltantes.
+- **config.js**: Lógica para almacenar configuraciones y empezar el juego.
+- **game.html**: Página del juego que muestra la secuencia de números y permite completar los faltantes.
+- **game.js**: Lógica del juego, generación de la secuencia, y validación de los inputs.
+- **result.html**: Página de resultados para ver los errores y agregar observaciones.
+- **result.js**: Manejo del resumen de errores y las opciones de finalizar o reiniciar el juego.
+- **style.css**: Estilos compartidos para todas las páginas del proyecto.
+
+## 🌟 Estilo Visual <a name="estilo-visual"></a>
+Para hacer que el juego sea más atractivo y divertido, se ha usado CSS para crear un diseño limpio y amigable. Cada botón tiene colores llamativos para guiar intuitivamente al usuario en la experiencia del juego. A continuación, algunos ejemplos de estilo:
+
+## 🤖 Desarrollado por Vertex Quality
+Este proyecto fue creado con pasión por **Vertex Quality** 🌀, buscando aportar diversión y aprendizaje a través de la práctica de secuencias numéricas. 
+
+¿Tienes alguna idea o simplemente quieres decir hola? 🌟
+¡No dudes en contactarnos! 📧 [contact@vertexquality.com](mailto:contact@vertexquality.com)
+
