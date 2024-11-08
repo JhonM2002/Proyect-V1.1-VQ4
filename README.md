@@ -49,18 +49,6 @@ Para utilizar este proyecto, simplemente sigue estos pasos:
 
    ![Resultados](img/Resultado.jpg)
 
-## 📂 Archivos y Estructura <a name="archivos-y-estructura"></a>
-### Estructura de Archivos
-- **login.html**: Página principal donde se ingresan los IDs de usuario.
-- **login.js**: Lógica del inicio de sesión y almacenamiento de IDs.
-- **config.html**: Configuración del juego donde se define el rango y los números faltantes.
-- **config.js**: Lógica para almacenar configuraciones y empezar el juego.
-- **game.html**: Página del juego que muestra la secuencia de números y permite completar los faltantes.
-- **game.js**: Lógica del juego, generación de la secuencia, y validación de los inputs.
-- **result.html**: Página de resultados para ver los errores y agregar observaciones.
-- **result.js**: Manejo del resumen de errores y las opciones de finalizar o reiniciar el juego.
-- **style.css**: Estilos compartidos para todas las páginas del proyecto.
-
 ## 🌟 Estilo Visual <a name="estilo-visual"></a>
 Para hacer que el juego sea más atractivo y divertido, se ha usado CSS para crear un diseño limpio y amigable. Cada botón tiene colores llamativos para guiar intuitivamente al usuario en la experiencia del juego. A continuación, algunos ejemplos de estilo:
 
