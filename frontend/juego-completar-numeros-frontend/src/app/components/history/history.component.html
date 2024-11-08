@@ -1,0 +1,47 @@
+<!-- <div class="history-container">
+    <h2 class="history-title">Historial</h2>
+    <div class="search-group">
+      <input
+        type="text"
+        [(ngModel)]="searchName"
+        class="search-input"
+        placeholder="Buscar por nombre del paciente"
+      />
+      <button class="btn btn-search" (click)="searchPatient()">Buscar</button>
+    </div>
+  
+    <div id="history-log" class="history-log">
+      <div *ngFor="let entry of filteredHistoryLog" class="history-entry">
+        <p>
+          Observación: {{ entry.observacion }} - Tiempo: {{ entry.tiempo }} - 
+          Errores: {{ entry.errores }} - Aciertos: {{ entry.aciertos }} - 
+          Paciente: {{ entry.nombrePaciente }} - Terapeuta: {{ entry.nombreTerapeuta }}
+        </p>
+        <hr class="divider"  />
+      </div>
+      <p *ngIf="filteredHistoryLog.length === 0">{{ message }}</p>
+    </div>
+  </div>
+   -->
+  <div class="history-container">
+    <h2 class="history-title">Historial</h2>
+    <div class="search-group">
+      <input
+        type="text"
+        [(ngModel)]="searchName"
+        class="search-input"
+        placeholder="Buscar por nombre del paciente"
+      />
+      <button class="btn btn-search" (click)="searchPatient()">Buscar</button>
+    </div>
+  
+    <div id="history-log" class="history-log">
+      <div *ngFor="let history of historyLog" class="history-entry">
+        <p><strong>Paciente:</strong> {{ history.nombrePaciente }} - <strong>Terapeuta:</strong> {{ history.nombreTerapeuta }}</p>
+        <p><Strong>Observación:</Strong> {{ history.observacion }} - <Strong>Tiempo:</Strong> {{ history.tiempo }} - <strong>Errores:</strong> {{ history.errores }} - <strong>Aciertos:</strong> {{ history.aciertos }}</p>
+        <hr class="divider" />
+      </div>
+      <p *ngIf="historyLog.length === 0" class="no-results">No se encontraron resultados.</p>
+    </div>
+  </div>
+  

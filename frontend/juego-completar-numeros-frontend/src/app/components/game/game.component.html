@@ -1,0 +1,24 @@
+<div class="game-container">
+  <h2 class="game-title">Encuentra los Números Faltantes</h2>
+  <h4>Secuencia generada desde {{ actualRangeStart }} hasta {{ actualRangeEnd }}</h4>
+
+  <!-- Mostrar la secuencia de números con espacios para los números faltantes -->
+  <div class="number-list">
+    <p *ngFor="let number of sequence" class="number-item">{{ number !== '' ? number : ' ' }}</p>
+  </div>
+
+  <span class="missing-title">Ingrese los números faltantes:</span>
+  
+  <!-- Inputs para que el usuario ingrese los números faltantes en cualquier orden -->
+  <div class="missing-inputs">
+    <input *ngFor="let _ of missingNumbers; let i = index"
+           type="number"
+           [(ngModel)]="userInputs[i]"
+           placeholder="Número {{ i + 1 }}"class="input-missing-number">
+  </div>
+
+  <!-- Botón para validar la secuencia -->
+  <button class="btn btn-validate" (click)="validateInput()">Validar</button>
+   <div class="feedback-message" [ngClass]="feedbackClass">{{ feedbackMessage }}
+   </div>
+</div>
