@@ -25,6 +25,11 @@ Para utilizar este proyecto, simplemente sigue estos pasos:
 1. Abre el archivo `login.html` en tu navegador favorito para comenzar.
 
 ## 🎮 Uso del Proyecto <a name="uso-del-proyecto"></a>
+Puedes guiarte a travez del siguiente video creado por nosotros para un mejor entendimiento del programa. 
+
+[Video Presentación - Vertex Quality 4](https://youtu.be/zKOd44bUAS8)
+
+
 1. **Pantalla de Login**: 
    - Ingresa el ID del terapeuta y el ID del paciente. Haz clic en **Continuar** para ir a la configuración del juego.
    - También puedes revisar el historial haciendo clic en **Historial**.
